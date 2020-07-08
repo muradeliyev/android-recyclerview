@@ -1,11 +1,13 @@
 package com.example.recyclerview;
 
 public class PeopleItem {
+
     private int num;
-    private String imgURL;
-    private String name;
     private int points;
     private int level;
+
+    private String imgURL;
+    private String name;
 
     public PeopleItem(int num, String url, String name, int points, int level) {
         this.num = num;
@@ -34,4 +36,5 @@ public class PeopleItem {
     public String getName() {
         return name;
     }
+
 }
