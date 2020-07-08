@@ -18,10 +18,12 @@ public class PeopleItemHolder extends RecyclerView.ViewHolder {
         level = itemView.findViewById(R.id.level);
     }
 
-    public void bindItem(PeopleItem peopleItem, Activity context) {
+    public void bindItem(PeopleItem peopleItem) {
         order_num.setText(peopleItem.getNum());
         name.setText(peopleItem.getName());
-        points.setText(context.getString(R.string.pts_text, peopleItem.getPoints()));
-        level.setText(context.getString(R.string.level_text, peopleItem.getLevel()));
+//        points.setText(context.getString(R.string.pts_text, peopleItem.getPoints()));
+//        level.setText(context.getString(R.string.level_text, peopleItem.getLevel()));
+        points.setText(peopleItem.getPoints());
+        level.setText(peopleItem.getLevel());
     }
 }

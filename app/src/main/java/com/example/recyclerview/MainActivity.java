@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayout);
 
         // specifying an adapter
-        myAdapter = new MyAdapter(this);
+        myAdapter = new MyAdapter();
         myAdapter.submitList(dataBase.getPeople());
         recyclerView.setAdapter(myAdapter);
     }

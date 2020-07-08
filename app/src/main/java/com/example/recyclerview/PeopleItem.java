@@ -34,4 +34,15 @@ public class PeopleItem {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "PeopleItem{" +
+                "num=" + num +
+                ", imgURL='" + imgURL + '\'' +
+                ", name='" + name + '\'' +
+                ", points=" + points +
+                ", level=" + level +
+                '}';
+    }
 }
